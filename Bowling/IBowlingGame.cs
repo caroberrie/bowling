@@ -1,4 +1,4 @@
-﻿using bowling.Frame;
+﻿using bowling.Frames;
 
 namespace bowling.Bowling
 {
@@ -7,6 +7,8 @@ namespace bowling.Bowling
         void AddFrame(IFrame Currentframe);
 
         void IncrementFrame();
+
+        int GetScore();
 
         GameState getCurrentGameState();
     }

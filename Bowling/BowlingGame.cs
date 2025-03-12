@@ -6,14 +6,14 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Sources;
-using bowling.Frame;
+using bowling.Frames;
 
 namespace bowling.Bowling
 {
     public class BowlingGame : IBowlingGame
     {
         private static int PinsToUse = 10;
-
+        private static int FramesToPlay = 9; //0 indexed
         private int frameCount;
         
 
@@ -95,7 +95,7 @@ namespace bowling.Bowling
             List<int> CurrentFramScore = new List<int>();
 
             CurrentFramScore.Add(GetUserInput()); 
-            if (CurrentFramScore[0] < PinsToUse || frameCount == 9)
+            if (CurrentFramScore[0] < PinsToUse || frameCount == FramesToPlay)
             {
                 Console.WriteLine("Input Second Frame Score");
                 CurrentFramScore.Add(GetUserInput());
@@ -104,27 +104,21 @@ namespace bowling.Bowling
             {
                 CurrentFramScore.Add(0);
             }
-            if(frameCount == 9)
+            if(frameCount == FramesToPlay)
             {
                 if (CurrentFramScore[0] + CurrentFramScore[1] >= PinsToUse)
                 {
                     Console.WriteLine("Input Third Frame Score");
-                    CurrentFramScore.Add(GetUserInput());
-                    CurrentFramScore.Add(0);  //0 values for later when calculating score
-                    CurrentFramScore.Add(0); ; //0 values for later when calculating score
+                    CurrentFramScore.Add(GetUserInput()); 
                 }
-                else
-                {
-                    CurrentFramScore.Add(0);  //0 values for later when calculating score
-                    CurrentFramScore.Add(0); ; //0 values for later when calculating score
-                    CurrentFramScore.Add(0); ; //0 values for later when calculating score
+                else {
+                    CurrentFramScore.Add(0);
                 }
-                
             }
             
             AddFrame(Factory.CreateFrame(frameCount, CurrentFramScore));
             
-            if (frameCount == 9)
+            if (frameCount == FramesToPlay)
             {
                 GetScore();
                 
@@ -142,7 +136,7 @@ namespace bowling.Bowling
 
         }
 
-        private void GetScore()
+        public int GetScore()
         {
             int RunningTotal = 0;
             string consoleMessage = "";
@@ -159,7 +153,7 @@ namespace bowling.Bowling
 
                         RunningTotal += Frame.GetTotalScore();
 
-                        if (Frame.GetFrameNumber() != 9)
+                        if (Frame.GetFrameNumber() != FramesToPlay)
                         {
                             if (Frames[Frame.GetFrameNumber() + 1].GetFrameStatus() == FrameState.Strike)
                             {
@@ -186,7 +180,7 @@ namespace bowling.Bowling
                     break;
                     case FrameState.Spare:
                         RunningTotal += Frame.GetTotalScore();
-                        if (Frame.GetFrameNumber() != 9)
+                        if (Frame.GetFrameNumber() != FramesToPlay)
                         {
                             RunningTotal += Frames[Frame.GetFrameNumber() + 1].GetScore(1);
                         }                   
@@ -200,8 +194,9 @@ namespace bowling.Bowling
             }
             
             Console.WriteLine($"Final Score:{RunningTotal}");
-            
-           
+            return RunningTotal;
+
+
         }
 
     }

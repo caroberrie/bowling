@@ -1,4 +1,4 @@
-﻿namespace bowling.Frame
+﻿namespace bowling.Frames
 {
     public class Factory
     {
@@ -17,15 +17,15 @@
             {
                 state = FrameState.None;
             }
-            if( FrameCount == 9)
+
+            if ( FrameCount == 9)
             {
                 return new Frame(FrameCount, new Dictionary<int, int>()
                 {
                     {1, FrameScores[0] },
                     {2, FrameScores[1] },
                     {3 ,FrameScores[2] },
-                    { 4 ,FrameScores[3] },
-                    { 5 ,FrameScores[4] }
+                    
                 }, state);
             }
             else

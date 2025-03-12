@@ -1,5 +1,5 @@
 ﻿
-namespace bowling.Frame
+namespace bowling.Frames
 {
     public interface IFrame
     {

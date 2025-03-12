@@ -1,4 +1,4 @@
-﻿namespace bowling.Frame
+﻿namespace bowling.Frames
 {
     public class Frame : IFrame
     {
