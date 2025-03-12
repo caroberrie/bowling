@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using bowling.Bowling;
 
 namespace Bowling.Frames { }
-public enum FrameState { None, Spare, Strike, ThirdFrameSpare, ThirdFrameStrike }
+public enum FrameState { None, Spare, Strike }
 
 public static class FrameStateUtil
 {

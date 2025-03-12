@@ -1,5 +1,8 @@
 ﻿namespace bowling.Frames
 {
+    /// <summary>
+    /// Houses the functionality of a frame, this frame can be any number of scores technically. The dictionary could be a list in this case as its an int 
+    /// </summary
     public class Frame : IFrame
     {
         private int frameCounter;

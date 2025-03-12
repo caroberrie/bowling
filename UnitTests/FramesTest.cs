@@ -17,11 +17,11 @@ namespace UnitTesting
                     [1] = 7,
                     [2] = 3
                 }
-             );
+             ,FrameState.Strike);
             }
 
             [Test]
-            [TestCase(ExpectedResult = FrameState.None)]
+            [TestCase(ExpectedResult = FrameState.Strike)]
             public FrameState TestFrameStatus()
             {
                 return frame.GetFrameStatus();

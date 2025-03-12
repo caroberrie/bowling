@@ -10,6 +10,9 @@ using bowling.Frames;
 
 namespace bowling.Bowling
 {
+    /// <summary>
+    /// Houses the functionality of running a 10 frame, 10 pin game of bowling, repeat of games, score reported at end
+    /// </summary
     public class BowlingGame : IBowlingGame
     {
         private static int PinsToUse = 10;
@@ -158,7 +161,7 @@ namespace bowling.Bowling
                             if (Frames[Frame.GetFrameNumber() + 1].GetFrameStatus() == FrameState.Strike)
                             {
                                 RunningTotal += Frames[Frame.GetFrameNumber() + 1].GetScore(1);
-                                try
+                                try //lazy way to catch the 9th frame
                                 {
                                     RunningTotal += Frames[Frame.GetFrameNumber() + 2].GetScore(1);
                                     break;
