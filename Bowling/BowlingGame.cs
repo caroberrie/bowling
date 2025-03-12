@@ -15,11 +15,13 @@ namespace bowling.Bowling
         private static int PinsToUse = 10;
 
         private int frameCount;
+        
 
         private List<IFrame> Frames;
+        
         public BowlingGame()
         {
-            Frames = new List<IFrame>();
+            Frames = new List<IFrame>();  
         }
         public GameState getCurrentGameState() {
             GameState GCGS_GameState;
@@ -83,39 +85,49 @@ namespace bowling.Bowling
         {
             Frames.Clear();
             Frames.TrimExcess();
-            frameCount = 0;
+            frameCount = -1;
         }
 
         public void GameLoop()
         {
             Console.WriteLine($"Input Frame Score ---Frame {frameCount + 1}---");
-            int throw1 = 0
-            , throw2 = 0
-            , throw3 = 0;
 
-            throw1 = GetUserInput();
-            if (throw1 < PinsToUse || frameCount == 9)
+            List<int> CurrentFramScore = new List<int>();
+
+            CurrentFramScore.Add(GetUserInput()); 
+            if (CurrentFramScore[0] < PinsToUse || frameCount == 9)
             {
                 Console.WriteLine("Input Second Frame Score");
-                throw2 = GetUserInput();
-            }
-            if(frameCount == 9)
-            {
-                if (throw1 + throw2 >= PinsToUse)
-                {
-                    Console.WriteLine("Input Third Frame Score");
-                    throw3 = GetUserInput();
-                }
-                AddFrame(Factory.CreateFrame(frameCount, throw1,throw2,throw3));
+                CurrentFramScore.Add(GetUserInput());
             }
             else
             {
-                AddFrame(Factory.CreateFrame(frameCount, throw1, throw2));
+                CurrentFramScore.Add(0);
             }
-            GetScore();
+            if(frameCount == 9)
+            {
+                if (CurrentFramScore[0] + CurrentFramScore[1] >= PinsToUse)
+                {
+                    Console.WriteLine("Input Third Frame Score");
+                    CurrentFramScore.Add(GetUserInput());
+                    CurrentFramScore.Add(0);  //0 values for later when calculating score
+                    CurrentFramScore.Add(0); ; //0 values for later when calculating score
+                }
+                else
+                {
+                    CurrentFramScore.Add(0);  //0 values for later when calculating score
+                    CurrentFramScore.Add(0); ; //0 values for later when calculating score
+                    CurrentFramScore.Add(0); ; //0 values for later when calculating score
+                }
+                
+            }
+            
+            AddFrame(Factory.CreateFrame(frameCount, CurrentFramScore));
+            
             if (frameCount == 9)
             {
-                IncrementFrame();
+                GetScore();
+                
                 Console.WriteLine("Another Game? Press 1 To Keep Playing, 2 to stop");
                 if(GetUserInput() == 1)
                 {
@@ -126,8 +138,8 @@ namespace bowling.Bowling
                     getCurrentGameState();
                 }    
             }
-
             IncrementFrame();
+
         }
 
         private void GetScore()
@@ -137,93 +149,59 @@ namespace bowling.Bowling
 
             foreach (IFrame Frame in Frames)
             {
-               
-                
-                    switch (Frame.GetFrameStatus())
-                    {
-                        case FrameState.None:
-                            RunningTotal += Frame.GetTotalScore();
+                switch (Frame.GetFrameStatus())
+                {
+                    case FrameState.None:
+                        RunningTotal += Frame.GetTotalScore();
+                        consoleMessage = "";
                         break;
-                        case FrameState.Strike:
-                            
-                            RunningTotal += Frame.GetTotalScore();
+                    case FrameState.Strike:
 
-                            if (frameCount >= Frame.GetFrameNumber() + 1 & Frame.GetFrameNumber() != 9)
-                            {
+                        RunningTotal += Frame.GetTotalScore();
 
-
-                                if (Frames[Frame.GetFrameNumber() + 1].GetFrameStatus() == FrameState.Strike)
-                                {
-                                    RunningTotal += Frames[Frame.GetFrameNumber() + 1].GetTotalScore();
-                                    if (frameCount > Frame.GetFrameNumber() + 2)
-                                    {
-                                        RunningTotal += Frames[Frame.GetFrameNumber() + 2].GetScore(1);
-                                    }
-                                }
-                                else
-                                {
-                                    RunningTotal += Frames[Frame.GetFrameNumber() + 1].GetScore(1) + Frames[Frame.GetFrameNumber() + 1].GetScore(2);
-                                    break;
-                                }
-                            }
-                            else if (Frame.GetFrameNumber() == 9)
-                            {
-                                    RunningTotal -= Frame.GetTotalScore(); //take off frame total for 10(9)
-                                                                           // X X 1 -> 21
-                                                                           // X 1 1 -> 12?
-                                                                           // X X X -> 30
-                                                                           // X 1 X -> not possible
-                                                                           //already here so has a strike in X ? X
-                                    if (Frames[Frame.GetFrameNumber()].GetScore(1) == 10)
-                                    {
-                                        RunningTotal += Frames[Frame.GetFrameNumber()].GetScore(1) + Frames[Frame.GetFrameNumber()].GetScore(2) + Frames[Frame.GetFrameNumber()].GetScore(3);
-                                    }
-                                    if (Frames[Frame.GetFrameNumber()].GetScore(2) == 10)
-                                    {
-                                         RunningTotal += Frames[Frame.GetFrameNumber()].GetScore(2) + Frames[Frame.GetFrameNumber()].GetScore(3);
-                                    }
-                                    if (Frames[Frame.GetFrameNumber()].GetScore(3) == 10)
-                                    {
-                                         RunningTotal += Frames[Frame.GetFrameNumber()].GetScore(3);
-                                    }
-                        }
-                            else
-                            {
-                                consoleMessage = "Running Score is incomplete next frame needed";
-                            }
-                            
-                        break;
-                        case FrameState.Spare:
-                            RunningTotal += Frame.GetTotalScore();
-                            if (frameCount >= Frame.GetFrameNumber() + 1 & Frame.GetFrameNumber() != 9) //dont do this if last frame is spare, as we have already scored it above.
+                        if (Frame.GetFrameNumber() != 9)
+                        {
+                            if (Frames[Frame.GetFrameNumber() + 1].GetFrameStatus() == FrameState.Strike)
                             {
                                 RunningTotal += Frames[Frame.GetFrameNumber() + 1].GetScore(1);
-                                break;
-                            }
-                            else if (Frame.GetFrameNumber() == 9)
-                            {
-                                RunningTotal += Frames[Frame.GetFrameNumber()].GetScore(3);
+                                try
+                                {
+                                    RunningTotal += Frames[Frame.GetFrameNumber() + 2].GetScore(1);
+                                    break;
+                                }
+                                catch
+                                {
+                                    RunningTotal += Frames[Frame.GetFrameNumber() + 1].GetScore(2);
+                                }
                             }
                             else
                             {
-                                consoleMessage = "Running Score is incomplete next frame needed";
+                                RunningTotal += Frames[Frame.GetFrameNumber() + 1].GetScore(1) + Frames[Frame.GetFrameNumber() + 1].GetScore(2);
+                                break;
                             }
-                        break;
-                        default:
-                            throw new InvalidOperationException("Unknown Frame State");
-                    }
+                        }
+                        
+
+  
+                    break;
+                    case FrameState.Spare:
+                        RunningTotal += Frame.GetTotalScore();
+                        if (Frame.GetFrameNumber() != 9)
+                        {
+                            RunningTotal += Frames[Frame.GetFrameNumber() + 1].GetScore(1);
+                        }                   
+                    break;
+                        
+                    
+                    default:
+                        throw new InvalidOperationException("Unknown Frame State");
+                }
                 
             }
-            if (frameCount == 9)
-            {
-                
-                Console.WriteLine($"Final Score:{RunningTotal}");
-            }
-            else
-            {
-                Console.WriteLine($"Running Score:{RunningTotal}");
-                if (!string.IsNullOrEmpty(consoleMessage)){ Console.WriteLine(consoleMessage); }
-            }
+            
+            Console.WriteLine($"Final Score:{RunningTotal}");
+            
+           
         }
 
     }
