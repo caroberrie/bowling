@@ -1,0 +1,15 @@
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\bin\Debug\BowlingUnitTest.dll
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\bin\Debug\BowlingUnitTest.pdb
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\obj\Debug\BowlingUnitTest.csproj.AssemblyReference.cache
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\obj\Debug\BowlingUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\obj\Debug\BowlingU.E7CFE1AF.Up2Date
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\obj\Debug\BowlingUnitTest.dll
+C:\Users\Caroline\source\repos\bowling\BowlingUnitTest\obj\Debug\BowlingUnitTest.pdb
