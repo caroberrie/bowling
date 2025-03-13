@@ -142,7 +142,7 @@ namespace bowling.Bowling
         public int GetScore()
         {
             int RunningTotal = 0;
-            string consoleMessage = "";
+           
 
             foreach (IFrame Frame in Frames)
             {
@@ -150,8 +150,7 @@ namespace bowling.Bowling
                 {
                     case FrameState.None:
                         RunningTotal += Frame.GetTotalScore();
-                        consoleMessage = "";
-                        break;
+                    break;
                     case FrameState.Strike:
 
                         RunningTotal += Frame.GetTotalScore();

@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\School\\Documents\\GitHub\\bowling\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|c:\\users\\school\\documents\\github\\bowling\\bowling\\bowling\\bowlinggame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|solutionrelative:bowling\\bowling\\bowlinggame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|c:\\users\\school\\documents\\github\\bowling\\bowling\\bowling\\bowlingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|solutionrelative:bowling\\bowling\\bowlingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|c:\\users\\school\\documents\\github\\bowling\\bowling\\bowling\\ibowlinggame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|solutionrelative:bowling\\bowling\\ibowlinggame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|c:\\users\\school\\documents\\github\\bowling\\bowling\\frames\\factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|solutionrelative:bowling\\frames\\factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|c:\\users\\school\\documents\\github\\bowling\\bowling\\frames\\frame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|solutionrelative:bowling\\frames\\frame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,20 +27,8 @@
       "RelativeMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|solutionrelative:bowling\\frames\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|c:\\users\\school\\documents\\github\\bowling\\bowling\\bowling\\bowlinggame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|solutionrelative:bowling\\bowling\\bowlinggame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|c:\\users\\school\\documents\\github\\bowling\\bowling\\frames\\factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|solutionrelative:bowling\\frames\\factory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|c:\\users\\school\\documents\\github\\bowling\\bowling\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|solutionrelative:bowling\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|c:\\users\\school\\documents\\github\\bowling\\bowling\\bowling\\bowlingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|solutionrelative:bowling\\bowling\\bowlingstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E9B9440-3075-4CC9-B106-A25BBE62D416}|bowling\\bowling.csproj|c:\\users\\school\\documents\\github\\bowling\\bowling\\unittests\\framestest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +42,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 388,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "IBowlingGame.cs",
+              "DocumentMoniker": "C:\\Users\\School\\Documents\\GitHub\\bowling\\bowling\\Bowling\\IBowlingGame.cs",
+              "RelativeDocumentMoniker": "bowling\\Bowling\\IBowlingGame.cs",
+              "ToolTip": "C:\\Users\\School\\Documents\\GitHub\\bowling\\bowling\\Bowling\\IBowlingGame.cs",
+              "RelativeToolTip": "bowling\\Bowling\\IBowlingGame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T17:47:33.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BowlingStatus.cs",
               "DocumentMoniker": "C:\\Users\\School\\Documents\\GitHub\\bowling\\bowling\\Bowling\\BowlingStatus.cs",
               "RelativeDocumentMoniker": "bowling\\Bowling\\BowlingStatus.cs",
@@ -55,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "FramesTest.cs",
               "DocumentMoniker": "C:\\Users\\School\\Documents\\GitHub\\bowling\\bowling\\UnitTests\\FramesTest.cs",
               "RelativeDocumentMoniker": "bowling\\UnitTests\\FramesTest.cs",
@@ -63,12 +80,11 @@
               "RelativeToolTip": "bowling\\UnitTests\\FramesTest.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAgwA8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T18:32:51.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T18:32:51.43Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Enum.cs",
               "DocumentMoniker": "C:\\Users\\School\\Documents\\GitHub\\bowling\\bowling\\Frames\\Enum.cs",
               "RelativeDocumentMoniker": "bowling\\Frames\\Enum.cs",
@@ -76,21 +92,19 @@
               "RelativeToolTip": "bowling\\Frames\\Enum.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T18:07:41.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T18:07:41.214Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Frame.cs",
               "DocumentMoniker": "C:\\Users\\School\\Documents\\GitHub\\bowling\\bowling\\Frames\\Frame.cs",
               "RelativeDocumentMoniker": "bowling\\Frames\\Frame.cs",
-              "ToolTip": "C:\\Users\\School\\Documents\\GitHub\\bowling\\bowling\\Frames\\Frame.cs*",
-              "RelativeToolTip": "bowling\\Frames\\Frame.cs*",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAoAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\School\\Documents\\GitHub\\bowling\\bowling\\Frames\\Frame.cs",
+              "RelativeToolTip": "bowling\\Frames\\Frame.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T18:04:39.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T18:04:39.919Z"
             },
             {
               "$type": "Document",
@@ -100,14 +114,14 @@
               "RelativeDocumentMoniker": "bowling\\Frames\\Factory.cs",
               "ToolTip": "C:\\Users\\School\\Documents\\GitHub\\bowling\\bowling\\Frames\\Factory.cs",
               "RelativeToolTip": "bowling\\Frames\\Factory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T17:24:51.039Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\School\\Documents\\GitHub\\bowling\\bowling\\Program.cs",
               "RelativeDocumentMoniker": "bowling\\Program.cs",
@@ -115,18 +129,17 @@
               "RelativeToolTip": "bowling\\Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T17:23:35.896Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T17:23:35.896Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "BowlingGame.cs",
               "DocumentMoniker": "C:\\Users\\School\\Documents\\GitHub\\bowling\\bowling\\Bowling\\BowlingGame.cs",
               "RelativeDocumentMoniker": "bowling\\Bowling\\BowlingGame.cs",
-              "ToolTip": "C:\\Users\\School\\Documents\\GitHub\\bowling\\bowling\\Bowling\\BowlingGame.cs",
-              "RelativeToolTip": "bowling\\Bowling\\BowlingGame.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAswHkAAABTAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\School\\Documents\\GitHub\\bowling\\bowling\\Bowling\\BowlingGame.cs*",
+              "RelativeToolTip": "bowling\\Bowling\\BowlingGame.cs*",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAwwJgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-12T17:23:34.156Z",
               "EditorCaption": ""
