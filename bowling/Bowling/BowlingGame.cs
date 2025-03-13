@@ -119,7 +119,7 @@ namespace bowling.Bowling
                 }
             }
             
-            AddFrame(Factory.CreateFrame(frameCount, CurrentFramScore));
+            AddFrame(Factory.CreateFrame(frameCount, CurrentFramScore, FramesToPlay, PinsToUse));
             
             if (frameCount == FramesToPlay)
             {

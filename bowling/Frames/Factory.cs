@@ -2,14 +2,14 @@
 {
     public class Factory
     {
-        public static IFrame CreateFrame(int FrameCount, List<int> FrameScores)
+        public static IFrame CreateFrame(int FrameCount, List<int> FrameScores, int FramesToPlay, int PinstoPlay)
         {
             FrameState state;
-            if (FrameScores[0] == 10)
+            if (FrameScores[0] == PinstoPlay)
             {
                 state = FrameState.Strike;
             }
-            else if (FrameScores[0] + FrameScores[1] == 10)
+            else if (FrameScores[0] + FrameScores[1] == PinstoPlay)
             {
                 state = FrameState.Spare;
             }
@@ -18,7 +18,7 @@
                 state = FrameState.None;
             }
 
-            if ( FrameCount == 9)
+            if (FrameCount == FramesToPlay)
             {
                 return new Frame(FrameCount, new Dictionary<int, int>()
                 {

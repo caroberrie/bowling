@@ -9,13 +9,6 @@
         private readonly Dictionary<int, int> frameDictionary;
         private FrameState state;
 
-        public Frame(int frameNumber, Dictionary<int, int> scoreDictionary)
-        {
-            this.frameCounter = frameNumber;
-            this.frameDictionary = scoreDictionary;
-            state = FrameState.None;
-        }
-
         public Frame(int frameNumber, Dictionary<int, int> scoreDictionary, FrameState status)
         {
             this.frameCounter = frameNumber;
