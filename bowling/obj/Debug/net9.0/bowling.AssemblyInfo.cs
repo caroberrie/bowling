@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("bowling")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb0f3628af2814c33d54ee0c4cdfe01d513325a1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5464c8c3cef474545738a71f7256bd740dbac16d")]
 [assembly: System.Reflection.AssemblyProductAttribute("bowling")]
 [assembly: System.Reflection.AssemblyTitleAttribute("bowling")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
